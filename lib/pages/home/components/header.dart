@@ -19,7 +19,7 @@ List<HeaderItem> headerItems = [
   HeaderItem(title: "TESTIMONIALS", onTap: () {}),
   HeaderItem(title: "BLOGS", onTap: () {}),
   HeaderItem(
-    title: "HIRE ME",
+    title: "HIRE US",
     onTap: () {},
     isButton: true,
   ),
@@ -33,7 +33,9 @@ class HeaderLogo extends StatelessWidget {
         cursor: SystemMouseCursors.click,
         child: GestureDetector(
           onTap: () {},
-          child: RichText(
+          child:Image.asset("assets/skLogo.png",height: 70,width: 70,)
+
+          /*RichText(
             text: TextSpan(
               children: [
                 TextSpan(
@@ -54,7 +56,7 @@ class HeaderLogo extends StatelessWidget {
                 )
               ],
             ),
-          ),
+          ),*/
         ),
       ),
     );

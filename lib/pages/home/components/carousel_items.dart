@@ -14,7 +14,7 @@ List<CarouselItemModel> carouselItems = List.generate(
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            "PRODUCT DESIGNER",
+            "Software Company",
             style: GoogleFonts.oswald(
               color: kPrimaryColor,
               fontWeight: FontWeight.w900,
@@ -25,7 +25,7 @@ List<CarouselItemModel> carouselItems = List.generate(
             height: 18.0,
           ),
           Text(
-            "MICHELE\nHARRINGTON",
+            "SKILLZUPP\nTECHNOLOGIES",
             style: GoogleFonts.oswald(
               color: Colors.white,
               fontSize: 40.0,
@@ -107,7 +107,7 @@ List<CarouselItemModel> carouselItems = List.generate(
     ),
     image: Container(
       child: Image.asset(
-        "assets/person.png",
+        "assets/techMain.png",
         fit: BoxFit.contain,
       ),
     ),

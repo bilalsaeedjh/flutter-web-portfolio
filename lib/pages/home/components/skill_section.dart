@@ -7,24 +7,24 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 
 List<Skill> skills = [
   Skill(
-    skill: "Dart",
-    percentage: 62,
+    skill: "Android",
+    percentage: 99,
   ),
   Skill(
-    skill: "Javascript",
-    percentage: 80,
+    skill: "iOS",
+    percentage: 100,
   ),
   Skill(
-    skill: "PHP",
-    percentage: 78,
+    skill: "Website",
+    percentage: 97,
   ),
   Skill(
-    skill: "Python",
-    percentage: 90,
+    skill: "Windows",
+    percentage: 95,
   ),
   Skill(
-    skill: "GoLang",
-    percentage: 40,
+    skill: "macOS",
+    percentage: 96,
   ),
 ];
 
@@ -55,7 +55,7 @@ class SkillSection extends StatelessWidget {
                 Expanded(
                   flex: ScreenHelper.isMobile(context) ? 0 : 2,
                   child: Image.asset(
-                    "assets/person_small.png",
+                    "assets/techMain.png",
                     width: 300.0,
                   ),
                 ),
@@ -69,7 +69,7 @@ class SkillSection extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "SKILLS",
+                        "We Develop applications for these operating systems:",
                         style: GoogleFonts.oswald(
                           color: Colors.white,
                           fontWeight: FontWeight.w900,
@@ -80,17 +80,7 @@ class SkillSection extends StatelessWidget {
                       SizedBox(
                         height: 10.0,
                       ),
-                      Text(
-                        "This is all the skills listed below more will be added in due time. This is all the skills listed below more will be added in due time.",
-                        style: TextStyle(
-                          color: kCaptionColor,
-                          height: 1.5,
-                          fontSize: 16.0,
-                        ),
-                      ),
-                      SizedBox(
-                        height: 15.0,
-                      ),
+
                       Column(
                         children: skills
                             .map(

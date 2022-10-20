@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       key: Globals.scaffoldKey,
-      endDrawer: Drawer(
+  /*    endDrawer: Drawer(
         child: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(
@@ -68,7 +68,7 @@ class Home extends StatelessWidget {
             ),
           ),
         ),
-      ),
+      ),*/
       body: Container(
         child: SingleChildScrollView(
           child: Column(
@@ -94,10 +94,10 @@ class Home extends StatelessWidget {
               SizedBox(
                 height: 50.0,
               ),
-              EducationSection(),
+             /* EducationSection(),
               SizedBox(
                 height: 50.0,
-              ),
+              ),*/
               SkillSection(),
               SizedBox(
                 height: 50.0,

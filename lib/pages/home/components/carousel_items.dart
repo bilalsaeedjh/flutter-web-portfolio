@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:web_portfolio/models/carousel_item_model.dart';
 import 'package:web_portfolio/utils/constants.dart';
 
@@ -37,7 +38,7 @@ List<CarouselItemModel> carouselItems = List.generate(
             height: 10.0,
           ),
           Text(
-            "Full-stack developer, based in Barcelona",
+            "We have to most talented and competent developer in our company. Check out our portfolio!",
             style: TextStyle(
               color: kCaptionColor,
               fontSize: 15.0,
@@ -51,27 +52,14 @@ List<CarouselItemModel> carouselItems = List.generate(
             child: Wrap(
               children: [
                 Text(
-                  "Need a full custom website?",
+                  "Need a full custom website, mobile app or a desktop application?",
                   style: TextStyle(
                     color: kCaptionColor,
                     fontSize: 15.0,
                     height: 1.5,
                   ),
                 ),
-                GestureDetector(
-                  onTap: () {},
-                  child: MouseRegion(
-                    cursor: SystemMouseCursors.click,
-                    child: Text(
-                      " Got a project? Let's talk.",
-                      style: TextStyle(
-                        height: 1.5,
-                        color: Colors.white,
-                        fontSize: 15.0,
-                      ),
-                    ),
-                  ),
-                )
+
               ],
             ),
           ),
@@ -90,9 +78,13 @@ List<CarouselItemModel> carouselItems = List.generate(
                 horizontal: 28.0,
               ),
               child: TextButton(
-                onPressed: () {},
+                onPressed: () async{
+                  var whatsapp = "923058431046";
+                  var whatsappAndroid =Uri.parse("whatsapp://send?phone=$whatsapp&text=Hi SkillzUPP Technologies! I wanted some information. Please reply ASAP");
+                  await launchUrl(whatsappAndroid);
+                },
                 child: Text(
-                  "GET STARTED",
+                  "Let's talk!",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 13.0,

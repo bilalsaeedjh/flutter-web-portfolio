@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "473711562923",
+    "project_id": "skillzupp-tech",
+    "storage_bucket": "skillzupp-tech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473711562923:android:3961e39e1485137144e7ee",
+        "android_client_info": {
+          "package_name": "com.example.web_portfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473711562923-vgfsj3r78p5qoo4st9u27443q6m16a03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCU1KqARVSj1YXCIHolESQBLZS0FgTAjWY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473711562923-vgfsj3r78p5qoo4st9u27443q6m16a03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

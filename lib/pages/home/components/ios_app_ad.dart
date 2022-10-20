@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
 
@@ -47,7 +48,7 @@ class IosAppAd extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "IOS APP",
+                          "Our Android APP",
                           style: GoogleFonts.oswald(
                             color: kPrimaryColor,
                             fontWeight: FontWeight.w900,
@@ -58,7 +59,7 @@ class IosAppAd extends StatelessWidget {
                           height: 15.0,
                         ),
                         Text(
-                          "UNIVERSAL\nSMART HOME APP",
+                          "E-commerce App\nTELLOO APP",
                           style: GoogleFonts.oswald(
                             color: Colors.white,
                             fontWeight: FontWeight.w900,
@@ -70,7 +71,7 @@ class IosAppAd extends StatelessWidget {
                           height: 10.0,
                         ),
                         Text(
-                          "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough",
+                          "We can create all types of E-commerce app that fits all kinds of your business needs!",
                           style: TextStyle(
                             color: kCaptionColor,
                             height: 1.5,
@@ -94,10 +95,13 @@ class IosAppAd extends StatelessWidget {
                                   horizontal: 28.0,
                                 ),
                                 child: TextButton(
-                                  onPressed: () {},
+                                  onPressed: () async {
+                                    var tellooAppLink =Uri.parse("https://play.google.com/store/apps/details?id=com.foodorderingapp.food_delivery_app&hl=en&gl=US");
+                                    await launchUrl(tellooAppLink);
+                                  },
                                   child: Center(
                                     child: Text(
-                                      "EXPLORE MORE",
+                                      "Check TELLOO on Playstore",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 13.0,
@@ -108,7 +112,7 @@ class IosAppAd extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                           /* SizedBox(
                               width: 10.0,
                             ),
                             MouseRegion(
@@ -136,7 +140,7 @@ class IosAppAd extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                            )
+                            )*/
                           ],
                         )
                       ],

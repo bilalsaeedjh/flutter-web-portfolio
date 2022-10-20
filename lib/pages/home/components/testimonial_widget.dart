@@ -7,18 +7,17 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 
 final List<Testimonial> testimonials = [
   Testimonial(
-    text:
-        "This is a testimonial text from Janny Stone. Michele is a professional at what he does and never ceases to amaze me with his beautiful works. I will like to work with him in the future again.",
-    occupation: "Product Designer",
-    personName: "JANNY STONE",
-    profilePhoto: "assets/female.png",
+    text:"Been working with the SkillzUPP Technologies. The peaceful atmosphere of the company and the collaborative team has enhanced my skills a lot.",
+    occupation: "DEVELOPER",
+    personName: "BILAL SAEED",
+    profilePhoto: "assets/bilalImage.jpeg",
   ),
   Testimonial(
     text:
-        "This is a testimonial text from Ken Williams. Michele is a professional at what he does and never ceases to amaze me with his beautiful works. I will like to work with him in the future again.",
-    occupation: "Art Director",
-    personName: "KEN WILLIAMS",
-    profilePhoto: "assets/male.png",
+        "SkillzUPP Technologies is a great company where I have learned a lot. We create all kinds of applications for different platforms i.e iOS, Android, Windows,macOS, Websites etc",
+    occupation: "DEVELOPER",
+    personName: "WAQAD ARSHAD",
+    profilePhoto: "assets/waqadImage.jpeg",
   )
 ];
 
@@ -47,7 +46,7 @@ Widget _buildUi(double width) {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "TESTIMONIALS",
+                "Meet our Developers",
                 style: GoogleFonts.oswald(
                   color: Colors.white,
                   fontWeight: FontWeight.w900,
@@ -55,37 +54,7 @@ Widget _buildUi(double width) {
                   height: 1.3,
                 ),
               ),
-              SizedBox(
-                height: 5.0,
-              ),
-              Container(
-                constraints: BoxConstraints(maxWidth: 400.0),
-                child: RichText(
-                  text: TextSpan(
-                    children: [
-                      TextSpan(
-                        text:
-                            "This is the portfolio section. There is alot of work here",
-                        style: TextStyle(color: Colors.white, height: 1.8),
-                      ),
-                      TextSpan(
-                          text: " click here to contact us",
-                          style: TextStyle(
-                            color: kPrimaryColor,
-                            fontWeight: FontWeight.w700,
-                            height: 1.8,
-                          )),
-                      TextSpan(
-                        text: ". Please subscribe to me youtube channel :-)",
-                        style: TextStyle(color: Colors.white, height: 1.8),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 45.0,
-              ),
+
               Flex(
                 direction: ScreenHelper.isMobile(context)
                     ? Axis.vertical

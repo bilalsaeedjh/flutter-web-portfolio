@@ -3,13 +3,14 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:web_portfolio/models/header_item.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/globals.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
 
 List<HeaderItem> headerItems = [
-  HeaderItem(
+/*  HeaderItem(
     title: "HOME",
     onTap: () {},
   ),
@@ -17,10 +18,14 @@ List<HeaderItem> headerItems = [
   HeaderItem(title: "SERVICES", onTap: () {}),
   HeaderItem(title: "PORTFOLIO", onTap: () {}),
   HeaderItem(title: "TESTIMONIALS", onTap: () {}),
-  HeaderItem(title: "BLOGS", onTap: () {}),
+  HeaderItem(title: "BLOGS", onTap: () {}),*/
   HeaderItem(
-    title: "HIRE US",
-    onTap: () {},
+    title: "HIRE US Now!",
+    onTap: () async {
+      var whatsapp = "923058431046";
+      var whatsappAndroid =Uri.parse("whatsapp://send?phone=$whatsapp&text=Hi SkillzUPP Technologies! I wanted some information. Please reply ASAP");
+      await launchUrl(whatsappAndroid);
+    },
     isButton: true,
   ),
 ];

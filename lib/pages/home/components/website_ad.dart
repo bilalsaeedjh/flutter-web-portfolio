@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
 
@@ -40,7 +41,7 @@ class WebsiteAd extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "WEBSITE",
+                          "Point of Solution",
                           style: GoogleFonts.oswald(
                             color: kPrimaryColor,
                             fontWeight: FontWeight.w900,
@@ -51,7 +52,7 @@ class WebsiteAd extends StatelessWidget {
                           height: 15.0,
                         ),
                         Text(
-                          "EVOLVING NAGA\nRESORT WEBSITE",
+                          "COMPLETE MOBILE\nPOS SYSTEM",
                           style: GoogleFonts.oswald(
                             color: Colors.white,
                             fontWeight: FontWeight.w900,
@@ -63,7 +64,7 @@ class WebsiteAd extends StatelessWidget {
                           height: 10.0,
                         ),
                         Text(
-                          "This is a random text about the project, I should have used the regular lorem ipsum text, but I am too lazy to search for that. This should be long enough",
+                          "Our Complete Mobile POS system is an innovative and complete Point Of Selling solution for your mini or mega business. This can be used both for Web, Desktop or Mobile.",
                           style: TextStyle(
                             color: kCaptionColor,
                             height: 1.5,
@@ -87,10 +88,13 @@ class WebsiteAd extends StatelessWidget {
                                   horizontal: 28.0,
                                 ),
                                 child: TextButton(
-                                  onPressed: () {},
+                                  onPressed: () async{
+                                    var posLink =Uri.parse("https://codecanyon.net/item/complete-mobileweb-pos-built-with-flutter-253/35987709");
+                                    await launchUrl(posLink);
+                                  },
                                   child: Center(
                                     child: Text(
-                                      "EXPLORE MORE",
+                                      "Take a demo",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 13.0,
@@ -101,7 +105,7 @@ class WebsiteAd extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                         /*   SizedBox(
                               width: 10.0,
                             ),
                             MouseRegion(
@@ -129,7 +133,7 @@ class WebsiteAd extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                            )
+                            )*/
                           ],
                         ),
                         SizedBox(

@@ -8,28 +8,28 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 
 final List<DesignProcess> designProcesses = [
   DesignProcess(
-    title: "DESIGN",
+    title: "WE DESIGN",
     imagePath: "assets/design.png",
     subtitle:
-        "A full stack allround designer thay may or may not include a guide for specific creative",
+        "We create beautiful designs that will attract the users.",
   ),
   DesignProcess(
-    title: "DEVELOP",
+    title: "WE DEVELOP",
     imagePath: "assets/develop.png",
     subtitle:
-        "A full stack allround developer thay may or may not include a guide for specific creative",
+        "We develop applications fast which are efficient and has great performance!",
   ),
   DesignProcess(
     title: "WRITE",
     imagePath: "assets/write.png",
     subtitle:
-        "A full stack allround writer thay may or may not include a guide for specific creative",
+        "We write the documentation of the software along the development!",
   ),
   DesignProcess(
     title: "PROMOTE",
     imagePath: "assets/promote.png",
     subtitle:
-        "A full stack allround promoter thay may or may not include a guide for specific creative",
+        "We promote the built software so that you could get success fast for your business",
   ),
 ];
 
@@ -67,7 +67,7 @@ class CvSection extends StatelessWidget {
                   fontSize: 18.0,
                 ),
               ),
-              GestureDetector(
+      /*        GestureDetector(
                 onTap: () {},
                 child: MouseRegion(
                   cursor: SystemMouseCursors.click,
@@ -80,7 +80,7 @@ class CvSection extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
+              ),*/
             ],
           ),
           SizedBox(

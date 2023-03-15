@@ -29,6 +29,49 @@
             {
               "client_id": "473711562923-vgfsj3r78p5qoo4st9u27443q6m16a03.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "473711562923-2n36l4t06386gbv5chns78rooc847dk9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ios.sk-tech"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473711562923:android:062e2a648871c14e44e7ee",
+        "android_client_info": {
+          "package_name": "com.flutterwebsite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473711562923-vgfsj3r78p5qoo4st9u27443q6m16a03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCU1KqARVSj1YXCIHolESQBLZS0FgTAjWY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473711562923-vgfsj3r78p5qoo4st9u27443q6m16a03.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "473711562923-2n36l4t06386gbv5chns78rooc847dk9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ios.sk-tech"
+              }
             }
           ]
         }

@@ -29,6 +29,16 @@ class DefaultFirebaseOptions {
           'DefaultFirebaseOptions have not been configured for macos - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
+      case TargetPlatform.windows:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
+      case TargetPlatform.linux:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for linux - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       default:
         throw UnsupportedError(
           'DefaultFirebaseOptions are not supported for this platform.',
@@ -56,11 +66,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyBZAL3VN8JdMgcVHWRJpGgj-Sg4j6WTgtM',
-    appId: '1:473711562923:ios:cfb1cd48e854154144e7ee',
+    appId: '1:473711562923:ios:57a99ee54f79a49244e7ee',
     messagingSenderId: '473711562923',
     projectId: 'skillzupp-tech',
     storageBucket: 'skillzupp-tech.appspot.com',
-    iosClientId: '473711562923-2n36l4t06386gbv5chns78rooc847dk9.apps.googleusercontent.com',
-    iosBundleId: 'com.ios.sk-tech',
+    iosClientId: '473711562923-ebajpfu6mftk985kv6s110o1nsb6k9uk.apps.googleusercontent.com',
+    iosBundleId: 'com.example.webPortfolio',
   );
 }
